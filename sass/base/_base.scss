@@ -3,42 +3,36 @@ html {
 }
 
 body {
-  font-size: 1.6rem;
-  font-family: "Open Sans", Verdana, sans-serif;
+  @include font($size: 1.6rem, $height: 2.6rem, $weight: normal);
+  @extend %font-prim;
 }
 
 h1 {
-  font-family: "Poppins", Verdana, sans-serif;
-  font-size: 44px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 54px;
+  @extend %font-add;
+  @include font($size: 4.4rem, $height: 5.4rem);
 }
 
 h2 {
-  font-size: 34px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
+
+  @include font($size: 3.4rem, $height: 4.6rem);
 }
 
 h3 {
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 34px;
+  
+  @include font($size: 2.4rem, $height: 3.4rem);
 }
 
 h4 {
-  font-size: 22px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
+
+  @include font($size: 2.2rem, $height: 3.0rem, $weight: 600);
 }
 
 h5 {
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 26px;
+
+  @include font($size: 1.6rem, $height: 2.6rem);
+}
+
+.block-shadowed {
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
 }
