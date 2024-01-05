@@ -1,0 +1,41 @@
+$image-gap: 32px;
+
+.employee {
+    display:flex;
+    padding: 35px;
+    position: relative;
+    width: calc(30% - $image-gap);
+}
+
+.employee__photo {
+    width: 98px;
+    height: 98px;
+    border-radius: 50%;
+    position:absolute;
+    top: 20px;
+    right: -$image-gap;
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.05);
+}
+
+.employee__name {
+    margin: 0;
+}
+
+.employee__title {
+    @include font($size: 1.4rem, $weight: normal);
+    margin:0;
+
+}
+
+.employee__contact {
+    @include font($size: 1.4rem, $weight: normal);
+    color: $color-link;
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.employee-container {
+    padding-right: $image-gap;
+}
