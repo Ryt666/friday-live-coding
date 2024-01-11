@@ -50,12 +50,13 @@ generateContent() {
 
     article.innerHTML = template;
 
-    return this.content;
+    return article;
 
 }
 
 renderModal() {
     let content = this.generateContent();
+
     super.buildModal(content);
 }
 }

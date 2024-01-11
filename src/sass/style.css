@@ -948,6 +948,7 @@ h5 {
 @media (max-width: 768px) {
   .strategy {
     overflow: hidden;
+    padding-top: 200px;
   }
 }
 
@@ -962,6 +963,34 @@ h5 {
   margin: 0 0 29px;
   text-align: left;
   flex-grow: 1;
+}
+
+.strategy__text {
+  margin: 0 0 12px;
+}
+
+.strategy__date {
+  font-size: 1.3rem;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1.3rem;
+  margin: 0 0 5px;
+}
+
+@media (max-width: 768px) {
+  .strategy__image {
+    position: absolute;
+    top: 0;
+  }
+}
+
+.article-modal__content .strategy__image {
+  width: 100%;
+}
+@media (max-width: 768px) {
+  .article-modal__content .strategy__image {
+    position: static;
+  }
 }
 
 .footer {
